@@ -1,0 +1,168 @@
+:root {
+  --text-color-black: #212529;
+  --text-color-gray: #7E7E7E;
+  --g5-color-accent: #000;
+  --g5-color-accent-foreground: #fff;
+  --g5-color-border: #eee;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: sans-serif;
+}
+.footer .contact-company .info .info-detail .company,
+.footer .contact-company .info .info-detail .useful,
+.footer .contact-company .info .info-detail .information {
+  color: var(--text-color-black);
+}
+.footer .contact-company .info .info-detail .company .heading h2,
+.footer .contact-company .info .info-detail .useful .heading h2,
+.footer .contact-company .info .info-detail .information .heading h2 {
+  font-size: 20px;
+}
+.footer .contact-company .info .info-detail .company .body,
+.footer .contact-company .info .info-detail .useful .body,
+.footer .contact-company .info .info-detail .information .body {
+  font-size: 14px;
+  color: var(--text-color-gray);
+}
+.footer .contact-company .info .info-detail .company .body a,
+.footer .contact-company .info .info-detail .useful .body a,
+.footer .contact-company .info .info-detail .information .body a {
+  text-decoration: none;
+}
+.footer .contact-company .info .info-detail .company .body ul,
+.footer .contact-company .info .info-detail .useful .body ul,
+.footer .contact-company .info .info-detail .information .body ul {
+  list-style: none;
+  margin-left: -30px;
+}
+.footer .contact-company .info .info-detail .company .body ul li,
+.footer .contact-company .info .info-detail .useful .body ul li,
+.footer .contact-company .info .info-detail .information .body ul li {
+  padding-bottom: 11px;
+}
+.footer .contact-company .info .info-detail .company .body ul li a,
+.footer .contact-company .info .info-detail .useful .body ul li a,
+.footer .contact-company .info .info-detail .information .body ul li a {
+  color: var(--text-color-gray);
+  transition: 0.3s all;
+  border-bottom: transparent;
+}
+.footer .contact-company .info .info-detail .company .body ul li:hover a,
+.footer .contact-company .info .info-detail .useful .body ul li:hover a,
+.footer .contact-company .info .info-detail .information .body ul li:hover a {
+  color: var(--text-color-black);
+  border-bottom: 1px solid;
+}
+.footer .contact-company .info .info-detail .company .body p {
+  text-wrap: wrap;
+  max-width: 150px;
+}
+.footer .contact-company .info .info-detail .company .body p a {
+  color: var(--text-color-black);
+  text-decoration: underline;
+  font-weight: bold;
+}
+.footer .contact-company .subscribe .heading {
+  max-width: 470px;
+}
+.footer .contact-company .subscribe .heading h2 {
+  font-size: 34px;
+}
+.footer .contact-company .subscribe .heading p {
+  font-size: 14px;
+  color: var(--text-color-gray);
+}
+.footer .contact-company .subscribe .input-email {
+  display: flex;
+}
+.footer .contact-company .subscribe .input-email input {
+  border: 1px solid var(--g5-color-border);
+  background: #fff;
+  width: 100%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 0 20px;
+}
+.footer .contact-company .subscribe .input-email input:focus {
+  outline: none;
+  border: 1px solid var(--text-color-black);
+}
+.footer .contact-company .subscribe .input-email .btn-subscribe {
+  font-size: 1rem;
+  line-height: 2.75rem;
+  padding: 0 35px;
+  font-weight: 600;
+  white-space: nowrap;
+  color: var(--g5-color-accent-foreground);
+  background-color: var(--g5-color-accent);
+  border-color: var(--g5-color-accent);
+  border-radius: 3px;
+  -webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+}
+.footer .contact-company .subscribe .input-email .btn-subscribe:hover {
+  background-color: #4e7661;
+  border: none;
+}
+.footer .social-company .social,
+.footer .social-company .logo-brand,
+.footer .social-company .logo-pays {
+  padding: 20px 20px 0;
+}
+.footer .social-company .social {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 0px;
+}
+.footer .social-company .social .heading p {
+  font-size: 14px;
+  color: var(--text-color-gray);
+}
+.footer .social-company .social .social-icon ul {
+  margin-left: -25px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 15px;
+}
+.footer .social-company .social .social-icon ul li i {
+  font-size: 18px;
+}
+.footer .social-company .logo-brand {
+  display: flex;
+  justify-content: center;
+}
+.footer .social-company .logo-pays {
+  display: flex;
+  justify-content: end;
+}
+@media only screen and (max-width: 991px) {
+  .footer .social-company .social,
+  .footer .social-company .logo-brand,
+  .footer .social-company .logo-pays {
+    justify-content: start;
+  }
+  .footer .social-company .social {
+    order: 2;
+  }
+  .footer .social-company .logo-brand {
+    order: 1;
+  }
+  .footer .social-company .logo-pays {
+    order: 3;
+  }
+}
+@media only screen and (max-width: 991px) and (min-width: 576px) {
+  .footer .social-company .logo-brand {
+    justify-content: center;
+  }
+}

@@ -12,13 +12,9 @@ $url_path = $url_host . $matches[1][0];
 $url_path = str_replace('\\', '/', $url_path);
 ?>
 <div class="type-1354">
-
-
     <div class='container'>
   
         <!--COL 1-->
-
-
        <div class="pross1">
         <div class='col-md-4 col-2' >
 
@@ -41,8 +37,6 @@ $url_path = str_replace('\\', '/', $url_path);
 
         </div>
         <!--COL 3-->
- 
-
     </div>
 </div>
 </div>

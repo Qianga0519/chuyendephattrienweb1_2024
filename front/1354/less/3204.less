@@ -1,0 +1,225 @@
+:root {
+    --text-color-black          : #212529;
+    --text-color-gray           : #7E7E7E;
+    --g5-color-accent           : #000;
+    --g5-color-accent-foreground: #fff;
+    --g5-color-border           : #eee;
+}
+
+* {
+    box-sizing: border-box;
+    margin    : 0;
+    padding   : 0;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+.footer {
+    .contact-company {
+        .info {
+            .info-detail {
+
+                .company,
+                .useful,
+                .information {
+                    color: var(--text-color-black);
+
+                    .heading {
+                        h2 {
+                            font-size: 20px;
+                        }
+                    }
+
+                    .body {
+                        font-size: 14px;
+                        color    : var(--text-color-gray);
+
+                        a {
+                            text-decoration: none;
+                        }
+
+                        ul {
+                            list-style : none;
+                            margin-left: -30px;
+
+                            li {
+                                padding-bottom: 11px;
+
+                                a {
+                                    color        : var(--text-color-gray);
+                                    transition   : 0.3s all;
+                                    border-bottom: transparent;
+                                }
+
+                                &:hover {
+
+                                    a {
+                                        color        : var(--text-color-black);
+                                        border-bottom: 1px solid;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .company {
+
+                    .body {
+                        p {
+                            text-wrap: wrap;
+                            max-width: 150px;
+
+                            a {
+                                color          : var(--text-color-black);
+                                text-decoration: underline;
+                                font-weight    : bold;
+                            }
+                        }
+                    }
+                }
+
+                .information {}
+            }
+        }
+
+        .subscribe {
+            .heading {
+                max-width: 470px;
+
+                h2 {
+                    font-size: 34px;
+                }
+
+                p {
+                    font-size: 14px;
+                    color    : var(--text-color-gray);
+
+                }
+            }
+
+            .input-email {
+                display: flex;
+
+                input {
+                    border                    : 1px solid var(--g5-color-border);
+                    background                : #fff;
+                    width                     : 100%;
+                    border-top-right-radius   : 0;
+                    border-bottom-right-radius: 0;
+                    padding                   : 0 20px;
+
+                    &:focus {
+                        outline: none;
+                        border : 1px solid var(--text-color-black);
+                    }
+                }
+
+                .btn-subscribe {
+
+                    font-size         : 1rem;
+                    line-height       : 2.75rem;
+                    padding           : 0 35px;
+                    font-weight       : 600;
+                    white-space       : nowrap;
+                    color             : var(--g5-color-accent-foreground);
+                    background-color  : var(--g5-color-accent);
+                    border-color      : var(--g5-color-accent);
+                    border-radius     : 3px;
+                    -webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+                    transition        : color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+                    text-transform    : capitalize;
+                    border            : none;
+                    outline           : none;
+
+                    &:hover {
+                        background-color: #4e7661;
+                        border          : none;
+                    }
+                }
+            }
+        }
+    }
+
+    .social-company {
+
+        .social, .logo-brand, .logo-pays{
+            padding: 20px 20px 0;
+           
+        }
+        .social {
+            display        : flex;
+            flex-direction : row;
+            justify-content: start;
+            gap            : 0px;
+            
+
+            .heading {
+                p {
+                    font-size: 14px;
+                    color    : var(--text-color-gray);
+                }
+            }
+
+            .social-icon {
+
+                ul {
+                    margin-left   : -25px;
+                    display       : flex;
+                    flex-direction: row;
+                    list-style    : none;
+                    gap           : 15px;
+
+                    li {
+                        i {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .logo-brand {
+            display        : flex;
+            justify-content: center;
+        }
+
+        .logo-pays {
+            display        : flex;
+            justify-content: end;
+          
+        }
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .footer {
+        .social-company {
+            .social, .logo-brand, .logo-pays{
+                justify-content: start;
+            }
+            .social {
+                order:2;
+            }
+
+            .logo-brand {
+                order:1;
+            }
+
+            .logo-pays {
+                order: 3;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 991px) and (min-width: 576px){
+    .footer {
+        .social-company {
+            .logo-brand{
+                justify-content: center;
+            }
+        }
+    }
+}
